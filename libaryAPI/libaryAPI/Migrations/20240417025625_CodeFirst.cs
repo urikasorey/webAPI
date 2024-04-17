@@ -12,6 +12,19 @@ namespace libaryAPI.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Authors",
+                columns: table => new
+                {
+                    AuthorID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Authors", x => x.AuthorID);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Publishers",
                 columns: table => new
                 {
@@ -33,9 +46,9 @@ namespace libaryAPI.Migrations
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     isRead = table.Column<bool>(type: "bit", nullable: false),
-                    DateRead = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Rate = table.Column<int>(type: "int", nullable: false),
-                    Grene = table.Column<int>(type: "int", nullable: false),
+                    DateRead = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Rate = table.Column<int>(type: "int", nullable: true),
+                    Genre = table.Column<int>(type: "int", nullable: false),
                     CoverUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DateAdded = table.Column<DateTime>(type: "datetime2", nullable: false),
                     PublishersID = table.Column<int>(type: "int", nullable: false)
@@ -64,6 +77,12 @@ namespace libaryAPI.Migrations
                 {
                     table.PrimaryKey("PK_Book_Author", x => x.ID);
                     table.ForeignKey(
+                        name: "FK_Book_Author_Authors_AuthorID",
+                        column: x => x.AuthorID,
+                        principalTable: "Authors",
+                        principalColumn: "AuthorID",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK_Book_Author_Books_BooksID",
                         column: x => x.BooksID,
                         principalTable: "Books",
@@ -71,27 +90,10 @@ namespace libaryAPI.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "Authors",
-                columns: table => new
-                {
-                    FullName = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Book_AuthorID = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Authors", x => x.FullName);
-                    table.ForeignKey(
-                        name: "FK_Authors_Book_Author_Book_AuthorID",
-                        column: x => x.Book_AuthorID,
-                        principalTable: "Book_Author",
-                        principalColumn: "ID");
-                });
-
             migrationBuilder.CreateIndex(
-                name: "IX_Authors_Book_AuthorID",
-                table: "Authors",
-                column: "Book_AuthorID");
+                name: "IX_Book_Author_AuthorID",
+                table: "Book_Author",
+                column: "AuthorID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Book_Author_BooksID",
@@ -108,10 +110,10 @@ namespace libaryAPI.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Authors");
+                name: "Book_Author");
 
             migrationBuilder.DropTable(
-                name: "Book_Author");
+                name: "Authors");
 
             migrationBuilder.DropTable(
                 name: "Books");

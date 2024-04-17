@@ -12,7 +12,7 @@ using libaryAPI.Data;
 namespace libaryAPI.Migrations
 {
     [DbContext(typeof(dbcontext))]
-    [Migration("20240415021048_CodeFirst")]
+    [Migration("20240417025625_CodeFirst")]
     partial class CodeFirst
     {
         /// <inheritdoc />
@@ -27,15 +27,17 @@ namespace libaryAPI.Migrations
 
             modelBuilder.Entity("libaryAPI.Models.Authors", b =>
                 {
-                    b.Property<string>("FullName")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int?>("Book_AuthorID")
+                    b.Property<int>("AuthorID")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.HasKey("FullName");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AuthorID"));
 
-                    b.HasIndex("Book_AuthorID");
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AuthorID");
 
                     b.ToTable("Authors");
                 });
@@ -55,6 +57,8 @@ namespace libaryAPI.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("ID");
+
+                    b.HasIndex("AuthorID");
 
                     b.HasIndex("BooksID");
 
@@ -76,20 +80,20 @@ namespace libaryAPI.Migrations
                     b.Property<DateTime>("DateAdded")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DateRead")
+                    b.Property<DateTime?>("DateRead")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Grene")
+                    b.Property<int>("Genre")
                         .HasColumnType("int");
 
                     b.Property<int>("PublishersID")
                         .HasColumnType("int");
 
-                    b.Property<int>("Rate")
+                    b.Property<int?>("Rate")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
@@ -123,20 +127,21 @@ namespace libaryAPI.Migrations
                     b.ToTable("Publishers");
                 });
 
-            modelBuilder.Entity("libaryAPI.Models.Authors", b =>
-                {
-                    b.HasOne("libaryAPI.Models.Book_Author", null)
-                        .WithMany("Authors")
-                        .HasForeignKey("Book_AuthorID");
-                });
-
             modelBuilder.Entity("libaryAPI.Models.Book_Author", b =>
                 {
+                    b.HasOne("libaryAPI.Models.Authors", "Author")
+                        .WithMany("Author")
+                        .HasForeignKey("AuthorID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("libaryAPI.Models.Books", null)
                         .WithMany("Book_Authors")
                         .HasForeignKey("BooksID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Author");
                 });
 
             modelBuilder.Entity("libaryAPI.Models.Books", b =>
@@ -150,9 +155,9 @@ namespace libaryAPI.Migrations
                     b.Navigation("Publishers");
                 });
 
-            modelBuilder.Entity("libaryAPI.Models.Book_Author", b =>
+            modelBuilder.Entity("libaryAPI.Models.Authors", b =>
                 {
-                    b.Navigation("Authors");
+                    b.Navigation("Author");
                 });
 
             modelBuilder.Entity("libaryAPI.Models.Books", b =>

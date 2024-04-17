@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wThq3Ovj3fhJGJBcPSBRqCdpzTAP1jppnvDzk8/iRxzBg3VQfBBojImO7IfJs+Tu9+ZOiURR0DG/9VxpZgq4ZQ==",
+  "dgSpecHash": "qr7CWsHdkBu7ii81jaCvtgS+3fyijps10KOPrAUkPLHnowr4nSpFJHq+rwICgL/XyQs0Yv7XTl3NiMmZ0EzEEA==",
   "success": true,
-  "projectFilePath": "F:\\github\\webAPI\\libaryAPI\\libaryAPI\\libaryAPI.csproj",
+  "projectFilePath": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\libaryAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nhanh\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\nhanh\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

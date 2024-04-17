@@ -8,6 +8,9 @@ namespace libaryAPI.Models
 		public int ID { get; set; }
 		public int AuthorID { get; set; }	
 		public int BooksID { get; set; }
-		public List<Authors>Authors { get; set; }
+	
+		public Authors Author { get; set; }
+		 
+
 	}
 }
