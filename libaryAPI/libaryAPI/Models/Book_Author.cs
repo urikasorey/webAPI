@@ -10,7 +10,7 @@ namespace libaryAPI.Models
 		public int BooksID { get; set; }
 	
 		public Authors Author { get; set; }
-		 
 
+		
 	}
 }

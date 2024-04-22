@@ -8,6 +8,7 @@ namespace libaryAPI.Models
 		public int AuthorID { get; set; }	
 		public string FullName { get; set; }
 		public List<Book_Author> Author { get; set; }
+
 	
 		
 	}

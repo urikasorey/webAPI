@@ -17,7 +17,7 @@ namespace libaryAPI.Models
 		public string CoverUrl { get; set; }
 		public DateTime DateAdded { get; set; }
 	
-	
+		public string Publishersid {get; set; }
 		public Publishers Publishers { get; set; }
 		public List<Book_Author> Book_Authors { get; set; }
 		

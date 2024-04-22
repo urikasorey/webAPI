@@ -15,6 +15,7 @@ namespace libaryAPI.Models.DTO
 		public string CoverUrl { get; set; }
 		public string? DateAdded { get; set; }
 		public string PublishersName { get; set; }
+		public string Pubishersid { get; set; }
 		public List<string>AuthorNames { get; set; }
 
 	}
