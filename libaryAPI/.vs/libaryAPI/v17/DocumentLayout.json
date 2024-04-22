@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "F:\\GitClone\\webAPI\\libaryAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Migrations\\20240417020221_CodeFirst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:libaryAPI\\Migrations\\20240417020221_CodeFirst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\authors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\models\\authors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\models\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\authors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\models\\authors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\book_author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,9 +30,6 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\github\\webAPI\\Sql\\SQLQuery2.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\github\\webAPI\\libaryAPI\\libaryAPI\\Migrations\\20240415014043_codeFirst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -48,17 +41,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Books.cs",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\Books.cs",
               "RelativeDocumentMoniker": "libaryAPI\\Models\\Books.cs",
               "ToolTip": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\Books.cs",
               "RelativeToolTip": "libaryAPI\\Models\\Books.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAApAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA5wAsAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T00:51:25.743Z",
               "IsPinned": true,
@@ -66,58 +59,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240417020221_CodeFirst.cs",
-              "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Migrations\\20240417020221_CodeFirst.cs",
-              "RelativeDocumentMoniker": "libaryAPI\\Migrations\\20240417020221_CodeFirst.cs",
-              "ToolTip": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Migrations\\20240417020221_CodeFirst.cs",
-              "RelativeToolTip": "libaryAPI\\Migrations\\20240417020221_CodeFirst.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T02:02:22.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "BookDTO.cs",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\DTO\\BookDTO.cs",
               "RelativeDocumentMoniker": "libaryAPI\\Models\\DTO\\BookDTO.cs",
               "ToolTip": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\DTO\\BookDTO.cs",
               "RelativeToolTip": "libaryAPI\\Models\\DTO\\BookDTO.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAzwBEAAAAbAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBEAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T01:16:22.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BooksController.cs",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Controllers\\BooksController.cs",
               "RelativeDocumentMoniker": "libaryAPI\\Controllers\\BooksController.cs",
               "ToolTip": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Controllers\\BooksController.cs",
               "RelativeToolTip": "libaryAPI\\Controllers\\BooksController.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAwwCoAAAADAAAA",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAAAG8AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T00:56:24.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "20240415014043_codeFirst.cs",
-              "DocumentMoniker": "F:\\github\\webAPI\\libaryAPI\\libaryAPI\\Migrations\\20240415014043_codeFirst.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\github\\webAPI\\libaryAPI\\libaryAPI\\Migrations\\20240415014043_codeFirst.cs",
-              "ToolTip": "F:\\github\\webAPI\\libaryAPI\\libaryAPI\\Migrations\\20240415014043_codeFirst.cs",
-              "RelativeToolTip": "..\\..\\..\\github\\webAPI\\libaryAPI\\libaryAPI\\Migrations\\20240415014043_codeFirst.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T01:40:43.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Authors.cs",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\Authors.cs",
               "RelativeDocumentMoniker": "libaryAPI\\Models\\Authors.cs",
@@ -125,12 +93,11 @@
               "RelativeToolTip": "libaryAPI\\Models\\Authors.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T01:11:07.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T01:11:07.33Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\appsettings.json",
               "RelativeDocumentMoniker": "libaryAPI\\appsettings.json",
@@ -138,12 +105,11 @@
               "RelativeToolTip": "libaryAPI\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-15T01:14:49.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T01:14:49.618Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Program.cs",
               "RelativeDocumentMoniker": "libaryAPI\\Program.cs",
@@ -155,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Book_Author.cs",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\Book_Author.cs",
               "RelativeDocumentMoniker": "libaryAPI\\Models\\Book_Author.cs",
@@ -163,12 +129,11 @@
               "RelativeToolTip": "libaryAPI\\Models\\Book_Author.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T01:08:15.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T01:08:15.077Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "SQLQuery2.sql",
               "DocumentMoniker": "F:\\github\\webAPI\\Sql\\SQLQuery2.sql",
               "RelativeDocumentMoniker": "..\\..\\..\\github\\webAPI\\Sql\\SQLQuery2.sql",

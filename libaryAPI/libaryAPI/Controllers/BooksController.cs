@@ -53,20 +53,75 @@ namespace libaryAPI.Controllers
 			}
 			return Ok(Books);
 		}
-		[HttpPost]
+		[HttpPost("{id}")]
 		public async Task<IActionResult> AddBook(Books book)
 		{
 			if (book == null)
 			{
 				return BadRequest("Book cannot be null.");
 			}
-				var resul = await _dbcontext.Books.AddAsync(book);
-				await _dbcontext.SaveChangesAsync();
-				return CreatedAtAction(nameof(GetBooks), new { id = book.ID }, book);
+			var resul = await _dbcontext.Books.AddAsync(book);
+			await _dbcontext.SaveChangesAsync();
+			return CreatedAtAction(nameof(GetBooks), new { id = book.ID }, book);
+		}
+
+
+		[HttpPut("{id}")]
+		public async Task<IActionResult> UpdateBook(int ID, Books book)
+		{
+			if (ID != book.ID)
+			{
+				return BadRequest("Book ID mismatch");
 			}
+			var bookInDb = await _dbcontext.Books.FindAsync(ID);
+			if (bookInDb == null)
+			{
+				return NotFound();
+			}
+			_dbcontext.Entry(bookInDb).CurrentValues.SetValues(book);
+			await _dbcontext.SaveChangesAsync();
+			return NoContent();
+		}
+		[HttpDelete("{id}")]
+		public async Task<IActionResult> DeleteBook(int ID)
+		{
+			var book = await _dbcontext.Books.FindAsync(ID);
+			if (book == null)
+			{
+				return NotFound();
+			}
+			_dbcontext.Books.Remove(book);
+			await _dbcontext.SaveChangesAsync();
+			return NoContent();
+		}
+		[HttpGet]
+		[Route("get-book-by-id/{id}")]
+		public IActionResult GetBookById([FromRoute] int id)
+		{
+			//get book domain model from db
+			var bookWithDomain = _dbcontext.Books.Where(n => n.ID == id);
+			if (bookWithDomain == null)
+			{
+				return NotFound();
+			}
+			//map domain model to DTO
+			var bookWithIdDTO = bookWithDomain.Select(Books => new BookDTO()
+			{
+				Id = Books.ID,
+				Title = Books.Title,
+				Description = Books.Description,
+				IsRead = Books.isRead,
+				DateRead = Books.isRead ? Books.DateRead.Value : null,
+				Rate = Books.isRead ? Books.Rate.Value : null,
+				Genre = Books.Genre,
+				CoverUrl = Books.CoverUrl,
+				PublishersName = Books.Publishers.Name,
+				AuthorNames = Books.Book_Authors.Select(n => n.Author.FullName).ToList()
+			});
+			return Ok(bookWithIdDTO);
 		}
 	}
-
+}
 
 	
 
