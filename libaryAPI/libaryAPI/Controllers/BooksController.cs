@@ -1,6 +1,7 @@
 ﻿using libaryAPI.Data;
 using libaryAPI.Models;
 using libaryAPI.Models.DTO;
+using libaryAPI.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,11 +15,13 @@ namespace libaryAPI.Controllers
 	public class BooksController : ControllerBase
 	{
 		private readonly dbcontext _dbcontext;
-		public BooksController(dbcontext dbcontext)
+		private readonly IBookRepository _bookRepository;
+		public BooksController(dbcontext dbcontext,IBookRepository BookRepository)
 		{
 			_dbcontext = dbcontext;
+			_bookRepository = BookRepository;
 		}
-		[HttpGet("get-all-books")]
+		/*[HttpGet("get-all-books")]
 		public IActionResult GetAll()
 		{
 			//var allBooksDomain=_dbcontext.Books.ToList();
@@ -43,57 +46,6 @@ namespace libaryAPI.Controllers
 			}).ToList();
 			return Ok(allBooksDTO);
 		}
-		/*	[HttpGet("{id}")]
-			public async Task<IActionResult> GetBooks(int ID)
-			{
-				var Books = await _dbcontext.Books.FindAsync(ID);
-				if (Books == null)
-				{
-					return NoContent();
-				}
-				return Ok(Books);
-			}
-			[HttpPost("{id}")]
-			public async Task<IActionResult> AddBook(Books book)
-			{
-				if (book == null)
-				{
-					return BadRequest("Book cannot be null.");
-				}
-				var resul = await _dbcontext.Books.AddAsync(book);
-				await _dbcontext.SaveChangesAsync();
-				return CreatedAtAction(nameof(GetBooks), new { id = book.ID }, book);
-			}
-
-
-			[HttpPut("{id}")]
-			public async Task<IActionResult> UpdateBook(int ID, Books book)
-			{
-				if (ID != book.ID)
-				{
-					return BadRequest("Book ID mismatch");
-				}
-				var bookInDb = await _dbcontext.Books.FindAsync(ID);
-				if (bookInDb == null)
-				{
-					return NotFound();
-				}
-				_dbcontext.Entry(bookInDb).CurrentValues.SetValues(book);
-				await _dbcontext.SaveChangesAsync();
-				return NoContent();
-			}
-			[HttpDelete("{id}")]
-			public async Task<IActionResult> DeleteBook(int ID)
-			{
-				var book = await _dbcontext.Books.FindAsync(ID);
-				if (book == null)
-				{
-					return NotFound();
-				}
-				_dbcontext.Books.Remove(book);
-				await _dbcontext.SaveChangesAsync();
-				return NoContent();
-			}*/
 		[HttpGet]
 		[Route("get-book-by-id/{id}")]
 		public IActionResult GetBookById([FromRoute] int id)
@@ -210,7 +162,48 @@ namespace libaryAPI.Controllers
 			}
 			
 			return Ok();
-		}	
+		}	*/
+		[HttpGet("get-all-books")]
+		public IActionResult GetAll()
+		{
+			//use Repository parttern
+		var allBooks = _bookRepository.GetAllBooks();
+			return Ok(allBooks);
+		}
+		[HttpGet]
+		[Route("get-book-by-id/{id}")]
+		public IActionResult GetBookById([FromRoute] int id)
+		{
+			//use Repository parttern
+			var book = _bookRepository.GetBookById(id);
+			
+			return Ok(book);	
+		}
+		[HttpPost("AddBook")]
+		public IActionResult AddBook([FromBody] AddBookRequestDTO addBookRequestDTO)
+		{
+			if (ModelState.IsValid)
+			{
+				var bookAdd = _bookRepository.AddBook(addBookRequestDTO);
+				return Ok(bookAdd);
+			}
+			else return BadRequest(ModelState);
+		}
+
+		[HttpPut("update-book-by-id/{id}")]
+		public IActionResult UpdateBookById([FromRoute] int id, [FromBody] AddBookRequestDTO BookDTO)
+		{
+			//use Repository parttern
+			var Updatebook = _bookRepository.UpdateBookById(id, BookDTO);
+			return Ok(Updatebook);
+		}
+		[HttpDelete("delete-book-by-id/{id}")]
+		public IActionResult DeleteBookById( int id)
+		{
+			//use Repository parttern
+			var Deletebook = _bookRepository.DeleteBookById(id);
+			return Ok(Deletebook);
+		}
 	}
 }
 

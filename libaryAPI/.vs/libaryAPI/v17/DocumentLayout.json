@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "F:\\GitClone\\webAPI\\libaryAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\controllers\\publisherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\controllers\\publisherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\repository\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\repository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\repository\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\book_author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\models\\book_author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\models\\dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\authors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\models\\authors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\models\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\dto\\addbookrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\models\\dto\\addbookrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\controllers\\publisherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\controllers\\publisherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\dto\\addpublisherrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,30 +51,11 @@
       "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\models\\dto\\publisherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\models\\dto\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\models\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\publishers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\models\\publishers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\dto\\addbookrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\models\\dto\\addbookrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|f:\\gitclone\\webapi\\libaryapi\\libaryapi\\models\\authors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7B9C86A-4B92-48DF-BB03-61CF14F574AF}|libaryAPI\\libaryAPI.csproj|solutionrelative:libaryapi\\models\\authors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\github\\webAPI\\Sql\\SQLQuery2.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\github\\webAPI\\Sql\\SQLQuery2.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,11 +65,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Program.cs",
+              "RelativeDocumentMoniker": "libaryAPI\\Program.cs",
+              "ToolTip": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Program.cs",
+              "RelativeToolTip": "libaryAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T01:17:23.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Repository\\BookRepository.cs",
+              "RelativeDocumentMoniker": "libaryAPI\\Repository\\BookRepository.cs",
+              "ToolTip": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Repository\\BookRepository.cs",
+              "RelativeToolTip": "libaryAPI\\Repository\\BookRepository.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAAAHQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T00:46:23.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IBookRepository.cs",
+              "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Repository\\IBookRepository.cs",
+              "RelativeDocumentMoniker": "libaryAPI\\Repository\\IBookRepository.cs",
+              "ToolTip": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Repository\\IBookRepository.cs",
+              "RelativeToolTip": "libaryAPI\\Repository\\IBookRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T00:41:45.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "PublisherDTO.cs",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\DTO\\PublisherDTO.cs",
               "RelativeDocumentMoniker": "libaryAPI\\Models\\DTO\\PublisherDTO.cs",
@@ -68,8 +116,7 @@
               "RelativeToolTip": "libaryAPI\\Models\\DTO\\PublisherDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T03:26:43.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-24T03:26:43.07Z"
             },
             {
               "$type": "Document",
@@ -79,27 +126,27 @@
               "RelativeDocumentMoniker": "libaryAPI\\Models\\DTO\\BookDTO.cs",
               "ToolTip": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\DTO\\BookDTO.cs",
               "RelativeToolTip": "libaryAPI\\Models\\DTO\\BookDTO.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA5wBEAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T03:26:23.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Books.cs",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\Books.cs",
               "RelativeDocumentMoniker": "libaryAPI\\Models\\Books.cs",
               "ToolTip": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\Books.cs",
               "RelativeToolTip": "libaryAPI\\Models\\Books.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAkwBEAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T03:22:51.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Book_Author.cs",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\Book_Author.cs",
               "RelativeDocumentMoniker": "libaryAPI\\Models\\Book_Author.cs",
@@ -112,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Publishers.cs",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\Publishers.cs",
               "RelativeDocumentMoniker": "libaryAPI\\Models\\Publishers.cs",
@@ -120,8 +167,7 @@
               "RelativeToolTip": "libaryAPI\\Models\\Publishers.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T03:16:28.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-24T03:16:28.48Z"
             },
             {
               "$type": "Document",
@@ -131,14 +177,14 @@
               "RelativeDocumentMoniker": "libaryAPI\\Models\\DTO\\AddBookRequestDTO.cs",
               "ToolTip": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\DTO\\AddBookRequestDTO.cs",
               "RelativeToolTip": "libaryAPI\\Models\\DTO\\AddBookRequestDTO.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwA4AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T03:13:36.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "AddPublisherRequestDTO.cs",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\DTO\\AddPublisherRequestDTO.cs",
               "RelativeDocumentMoniker": "libaryAPI\\Models\\DTO\\AddPublisherRequestDTO.cs",
@@ -146,38 +192,37 @@
               "RelativeToolTip": "libaryAPI\\Models\\DTO\\AddPublisherRequestDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T03:07:49.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-24T03:07:49.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "PublishersController.cs",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Controllers\\PublishersController.cs",
               "RelativeDocumentMoniker": "libaryAPI\\Controllers\\PublishersController.cs",
               "ToolTip": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Controllers\\PublishersController.cs",
               "RelativeToolTip": "libaryAPI\\Controllers\\PublishersController.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAuwEoAAAAGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T02:52:21.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BooksController.cs",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Controllers\\BooksController.cs",
               "RelativeDocumentMoniker": "libaryAPI\\Controllers\\BooksController.cs",
               "ToolTip": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Controllers\\BooksController.cs",
               "RelativeToolTip": "libaryAPI\\Controllers\\BooksController.cs",
-              "ViewState": "AQIAAGoAAAAAAAAAAAASwHgAAAAcAAAA",
+              "ViewState": "AQIAAL8AAAAAAAAAAAAUwMQAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T00:56:24.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "Authors.cs",
               "DocumentMoniker": "F:\\GitClone\\webAPI\\libaryAPI\\libaryAPI\\Models\\Authors.cs",
               "RelativeDocumentMoniker": "libaryAPI\\Models\\Authors.cs",
@@ -190,14 +235,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SQLQuery2.sql ",
+              "DocumentIndex": 13,
+              "Title": "SQLQuery2.sql",
               "DocumentMoniker": "F:\\github\\webAPI\\Sql\\SQLQuery2.sql",
               "RelativeDocumentMoniker": "..\\..\\..\\github\\webAPI\\Sql\\SQLQuery2.sql",
-              "ToolTip": "SQLQuery2.sql ",
+              "ToolTip": "F:\\github\\webAPI\\Sql\\SQLQuery2.sql",
+              "RelativeToolTip": "..\\..\\..\\github\\webAPI\\Sql\\SQLQuery2.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-04-15T00:47:35.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T00:47:35.151Z"
             }
           ]
         }
