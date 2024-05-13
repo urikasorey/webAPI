@@ -1,6 +1,7 @@
 ﻿using libaryAPI.Data;
 using libaryAPI.Models;
 using libaryAPI.Models.DTO;
+using libaryAPI.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -18,7 +19,7 @@ namespace libaryAPI.Controllers
 		{
 			_dbcontext = dbcontext;
 		}
-		[HttpGet("get-all-books")]
+	/*	[HttpGet("get-all-books")]
 		public IActionResult GetAll()
 		{
 			//var allBooksDomain=_dbcontext.Books.ToList();
@@ -43,7 +44,7 @@ namespace libaryAPI.Controllers
 			}).ToList();
 			return Ok(allBooksDTO);
 		}
-		/*	[HttpGet("{id}")]
+			[HttpGet("{id}")]
 			public async Task<IActionResult> GetBooks(int ID)
 			{
 				var Books = await _dbcontext.Books.FindAsync(ID);
@@ -150,7 +151,7 @@ namespace libaryAPI.Controllers
 				_dbcontext.Book_Author.Add(bookAuthor);
 				_dbcontext.SaveChanges();
 			}
-			
+	
 			return Ok();
 		}		
 
@@ -210,7 +211,15 @@ namespace libaryAPI.Controllers
 			}
 			
 			return Ok();
-		}	
+	
+		}
+		public IActionResult GetAll([FromQuery] string? filterOn, [FromQuery] string? filterQuery)
+		{
+			// su dung reposity pattern
+			var allBooks = BookRepository.GetAllBook(filterOn, filterQuery);
+			return Ok(allBooks);
+		}
+
 	}
 }
 

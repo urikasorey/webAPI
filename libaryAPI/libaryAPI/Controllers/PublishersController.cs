@@ -1,79 +1,58 @@
 ﻿using libaryAPI.Data;
 using libaryAPI.Models;
 using libaryAPI.Models.DTO;
+using libaryAPI.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace libaryAPI.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
+	
 	public class PublishersController : ControllerBase
 	{
-
-		private readonly dbcontext dbcontext1;
-		public PublishersController(dbcontext dbcontext)
+		private readonly dbcontext _dbContext;
+		private readonly IPublisherRepository _publisherRepository;
+		public PublishersController(dbcontext dbContext, IPublisherRepository
+		publisherRepository)
 		{
-			dbcontext1 = dbcontext;
+			_dbContext = dbContext;
+			_publisherRepository = publisherRepository;
 		}
-		//get all publishers
-		[HttpGet("get-all-publishers")]
-		public IActionResult GetAll()
+		[HttpGet("get-all-publisher")]
+		public IActionResult GetAllPublisher()
 		{
-			var allPublishersDomain = dbcontext1.Publishers;
-			//map domain models to DTO
-			var allPublishersDTO = allPublishersDomain.Select(Publishers => new PublisherDTO()
-			{
-				ID = Publishers.ID,
-				Name = Publishers.Name,
-				Books = Publishers.Books.Select(n => new Books()
-				{
-					ID = n.ID,
-					Title = n.Title,
-					Description = n.Description,
-					isRead = n.isRead,
-					DateRead = n.DateRead,
-					Rate = n.Rate,
-					Genre = n.Genre,
-					CoverUrl = n.CoverUrl,
-					DateAdded = n.DateAdded,
-					PublishersID = n.PublishersID,
-					
-				}).ToList()
-			}).ToList();
-			return Ok(allPublishersDTO);
+			var allPublishers = _publisherRepository.GetAllPublishers();
+			return Ok(allPublishers);
 		}
-		//get publisher by id
-		[HttpGet(" get-Publisher-by-Id{id}")]
-		public IActionResult GetPublisherId([FromRoute] int id)
+		[HttpGet("get-publisher-by-id")]
+		public IActionResult GetPublisherById(int id)
 		{
-			//get publisher domain model from db
-			var publisher = dbcontext1.Publishers.FirstOrDefault(n => n.ID == id);
-			if (publisher == null)
-			{
-				return NotFound();
-			}
-			//map domain model to DTO
-			var publisherDTO = new PublisherDTO()
-			{
-				ID = publisher.ID,
-				Name = publisher.Name,
-				Books = publisher.Books.Select(n => new Books()
-				{
-					ID = n.ID,
-					Title = n.Title,
-					Description = n.Description,
-					isRead = n.isRead,
-					DateRead = n.DateRead,
-					Rate = n.Rate,
-					Genre = n.Genre,
-					CoverUrl = n.CoverUrl,
-					DateAdded = n.DateAdded,
-					PublishersID = n.PublishersID,
-					
-				}).ToList()
-			};return Ok();
+			var publisherWithId = _publisherRepository.GetPublisherById(id);
+			return Ok(publisherWithId);
 		}
-
+		[HttpPost("Add-publiser")]
+		public IActionResult AddPublisher([FromBody] AddPublisherRequestDTO
+		addPublisherRequestDTO)
+		{
+			var publisherAdd = _publisherRepository.AddPublisher(addPublisherRequestDTO);
+			return Ok(publisherAdd);
+		}
+		[HttpPut("update-publisher-by-id/{id}")]
+		public IActionResult UpdatePublisherById(int id, [FromBody] PublisherNoIdDTO
+		publisherDTO)
+		{
+			var publisherUpdate = _publisherRepository.UpdatePublisherById(id,
+			publisherDTO);
+			return Ok(publisherUpdate);
+		}
+		[HttpDelete("delete-publisher-by-id/{id}")]
+		public IActionResult DeletePublisherById(int id)
+		{
+			var publisherDelete = _publisherRepository.DeletePublisherById(id);
+			return Ok();
+		}
 	}
 }
