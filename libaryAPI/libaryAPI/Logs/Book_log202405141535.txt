@@ -1,0 +1,26 @@
+2024-05-14 15:35:49.865 +07:00 [INF] User profile is available. Using 'C:\Users\nhanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-14 15:35:50.112 +07:00 [INF] Now listening on: https://localhost:7179
+2024-05-14 15:35:50.114 +07:00 [INF] Now listening on: http://localhost:5062
+2024-05-14 15:35:50.116 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-14 15:35:50.117 +07:00 [INF] Hosting environment: Development
+2024-05-14 15:35:50.118 +07:00 [INF] Content root path: F:\GitClone\webAPI\libaryAPI\libaryAPI
+2024-05-14 15:35:53.069 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/swagger/index.html - null null
+2024-05-14 15:35:53.482 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/swagger/index.html - 200 null text/html;charset=utf-8 421.3179ms
+2024-05-14 15:35:54.205 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-14 15:35:54.218 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 10.7324ms
+2024-05-14 15:35:54.237 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/_vs/browserLink - null null
+2024-05-14 15:35:54.273 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-14 15:35:54.278 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/_vs/browserLink - null null
+2024-05-14 15:35:54.278 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 5.0063ms
+2024-05-14 15:35:54.298 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.063ms
+2024-05-14 15:35:54.317 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.3946ms
+2024-05-14 15:35:54.462 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/swagger/v1/swagger.json - null null
+2024-05-14 15:35:54.680 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/swagger/v1/swagger.json - null null
+2024-05-14 15:35:54.682 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 219.3458ms
+2024-05-14 15:35:54.694 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.7625ms
+2024-05-14 15:35:55.073 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/swagger/highLightTitle.png - null null
+2024-05-14 15:35:55.098 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/swagger/highLightTitle.png - 404 0 null 25.8694ms
+2024-05-14 15:35:55.104 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/swagger/highLightTitle.png, Response status code: 404
+2024-05-14 15:35:55.232 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/swagger/highLightTitle.png - null null
+2024-05-14 15:35:55.237 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/swagger/highLightTitle.png - 404 0 null 5.5024ms
+2024-05-14 15:35:55.241 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/swagger/highLightTitle.png, Response status code: 404

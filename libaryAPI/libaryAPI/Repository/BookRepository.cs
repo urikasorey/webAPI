@@ -1,6 +1,7 @@
 ﻿using libaryAPI.Data;
 using libaryAPI.Models;
 using libaryAPI.Models.DTO;
+using Microsoft.EntityFrameworkCore;
 namespace libaryAPI.Repository
 {
 	public class BookRepository : IBookRepository
@@ -29,6 +30,85 @@ namespace libaryAPI.Repository
 			}).ToList();
 			return allBooksDTO;
 		}
+		/*	public List<BookDTO> GetAllBooks(string? filterOn = null, string?
+	filterQuery = null, string? sortBy = null, bool isAscending = true)
+			{
+				var allBooks = dbcontext1.Books.Select(Books => new BookDTO()
+				{
+					Id = Books.ID,
+					Title = Books.Title,
+					Description = Books.Description,
+					IsRead = Books.isRead,
+					DateRead = Books.isRead ? Books.DateRead.Value : null,
+					Rate = Books.isRead ? Books.Rate.Value : null,
+					Genre = Books.Genre,
+					CoverUrl = Books.CoverUrl,
+					PublishersName = Books.Publishers.Name,
+					AuthorNames = Books.Book_Authors.Select(n => n.Author.FullName).ToList()
+				}).AsQueryable();
+				//filtering
+				if (string.IsNullOrWhiteSpace(filterOn) == false &&
+				string.IsNullOrWhiteSpace(filterQuery) == false)
+				{
+					if (filterOn.Equals("title", StringComparison.OrdinalIgnoreCase))
+					{
+						allBooks = allBooks.Where(x => x.Title.Contains(filterQuery));
+					}
+				}
+				//sorting
+				if (string.IsNullOrWhiteSpace(sortBy) == false)
+				{
+					if (sortBy.Equals("title", StringComparison.OrdinalIgnoreCase))
+					{
+						allBooks = isAscending ? allBooks.OrderBy(x => x.Title) :
+						allBooks.OrderByDescending(x => x.Title);
+					}
+				}
+				return allBooks.ToList();
+			}*/
+
+		public List<BookDTO> GetAllBooks(string? filterOn = null, string?
+filterQuery = null,
+string? sortBy = null, bool isAscending = true, int pageNumber = 1, int
+pageSize = 1000)
+		{
+			var allBooks = dbcontext1.Books.Select(Books => new
+			BookDTO()
+			{
+				Id = Books.ID,
+				Title = Books.Title,
+				Description = Books.Description,
+				IsRead = Books.isRead,
+				DateRead = Books.isRead ? Books.DateRead.Value : null,
+				Rate = Books.isRead ? Books.Rate.Value : null,
+				Genre = Books.Genre,
+				CoverUrl = Books.CoverUrl,
+				PublishersName = Books.Publishers.Name,
+				AuthorNames = Books.Book_Authors.Select(n => n.Author.FullName).ToList()
+			}).AsQueryable();
+			//filtering
+			if (string.IsNullOrWhiteSpace(filterOn) == false &&
+			string.IsNullOrWhiteSpace(filterQuery) == false)
+			{
+				if (filterOn.Equals("title", StringComparison.OrdinalIgnoreCase))
+				{
+					allBooks = allBooks.Where(x => x.Title.Contains(filterQuery));
+				}
+			}
+			//sorting
+			if (string.IsNullOrWhiteSpace(sortBy) == false)
+			{
+				if (sortBy.Equals("title", StringComparison.OrdinalIgnoreCase))
+				{
+					allBooks = isAscending ? allBooks.OrderBy(x => x.Title) :
+					allBooks.OrderByDescending(x => x.Title);
+				}
+			}
+			//pagination
+			var skipResults = (pageNumber - 1) * pageSize;
+			return allBooks.Skip(skipResults).Take(pageSize).ToList();
+		}
+
 		public BookDTO GetBookById(int id)
 		{
 			var book = dbcontext1.Books.FirstOrDefault(n => n.ID == id);

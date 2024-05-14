@@ -9,6 +9,12 @@
       "type": "mssql.onprem",
       "connectionId": "ConnectionStrings:libary",
       "dynamicId": null
+    },
+    "mssql2": {
+      "serviceConnectorResourceId": "",
+      "secretStore": "LocalSecretsFile",
+      "type": "mssql.onprem",
+      "connectionId": "ConnectionStrings:BookAuthenConnect"
     }
   }
 }
