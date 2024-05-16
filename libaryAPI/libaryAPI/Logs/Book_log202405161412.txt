@@ -1,0 +1,26 @@
+2024-05-16 14:12:30.188 +07:00 [INF] User profile is available. Using 'C:\Users\nhanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-16 14:12:30.376 +07:00 [INF] Now listening on: https://localhost:7179
+2024-05-16 14:12:30.377 +07:00 [INF] Now listening on: http://localhost:5062
+2024-05-16 14:12:30.380 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-16 14:12:30.381 +07:00 [INF] Hosting environment: Development
+2024-05-16 14:12:30.382 +07:00 [INF] Content root path: F:\GitClone\webAPI\libaryAPI\libaryAPI
+2024-05-16 14:12:37.215 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/swagger/index.html - null null
+2024-05-16 14:12:37.577 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/swagger/index.html - 200 null text/html;charset=utf-8 367.6473ms
+2024-05-16 14:12:38.147 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 14:12:38.157 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 9.5812ms
+2024-05-16 14:12:38.162 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/_vs/browserLink - null null
+2024-05-16 14:12:38.210 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.8516ms
+2024-05-16 14:12:38.279 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 14:12:38.279 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/_vs/browserLink - null null
+2024-05-16 14:12:38.283 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 4.4913ms
+2024-05-16 14:12:38.303 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.5595ms
+2024-05-16 14:12:38.368 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/swagger/v1/swagger.json - null null
+2024-05-16 14:12:38.526 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/swagger/v1/swagger.json - null null
+2024-05-16 14:12:38.526 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 158.5091ms
+2024-05-16 14:12:38.535 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.7564ms
+2024-05-16 14:12:38.859 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/swagger/highLightTitle.png - null null
+2024-05-16 14:12:38.872 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/swagger/highLightTitle.png - 404 0 null 13.654ms
+2024-05-16 14:12:38.877 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/swagger/highLightTitle.png, Response status code: 404
+2024-05-16 14:12:47.829 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/api/Publishers/get-publisher-by-id?id=11 - null null
+2024-05-16 14:12:47.837 +07:00 [INF] Executing endpoint 'libaryAPI.Controllers.PublishersController.GetPublisherById (libaryAPI)'
+2024-05-16 14:12:47.862 +07:00 [INF] Route matched with {action = "GetPublisherById", controller = "Publishers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPublisherById(Int32) on controller libaryAPI.Controllers.PublishersController (libaryAPI).

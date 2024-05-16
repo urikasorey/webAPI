@@ -1,0 +1,16 @@
+2024-05-16 15:06:16.344 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5062/api/Books/AddBook - application/json 264
+2024-05-16 15:06:16.355 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 15:06:16.355 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-16 15:06:16.356 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5062/api/Books/AddBook - 302 0 null 12.6566ms
+2024-05-16 15:06:16.360 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FBooks%2FAddBook - null null
+2024-05-16 15:06:16.362 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FBooks%2FAddBook - 404 0 null 2.0556ms
+2024-05-16 15:06:16.365 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/Account/Login, Response status code: 404
+2024-05-16 15:06:27.860 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5062/api/Books/AddBook - application/json 264
+2024-05-16 15:06:27.864 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 15:06:27.864 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-16 15:06:27.866 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5062/api/Books/AddBook - 302 0 null 5.3328ms
+2024-05-16 15:06:27.870 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FBooks%2FAddBook - null null
+2024-05-16 15:06:27.872 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FBooks%2FAddBook - 404 0 null 2.2842ms
+2024-05-16 15:06:27.875 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/Account/Login, Response status code: 404

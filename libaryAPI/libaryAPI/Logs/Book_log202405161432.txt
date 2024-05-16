@@ -1,0 +1,71 @@
+2024-05-16 14:32:21.141 +07:00 [INF] User profile is available. Using 'C:\Users\nhanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-16 14:32:21.322 +07:00 [INF] Now listening on: http://localhost:5062
+2024-05-16 14:32:21.326 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-16 14:32:21.328 +07:00 [INF] Hosting environment: Development
+2024-05-16 14:32:21.328 +07:00 [INF] Content root path: F:\GitClone\webAPI\libaryAPI\libaryAPI
+2024-05-16 14:32:23.372 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/index.html - null null
+2024-05-16 14:32:23.727 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/index.html - 200 null text/html;charset=utf-8 372.499ms
+2024-05-16 14:32:23.760 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 14:32:23.765 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 5.2599ms
+2024-05-16 14:32:24.355 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 14:32:24.358 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 2.8366ms
+2024-05-16 14:32:24.370 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_vs/browserLink - null null
+2024-05-16 14:32:24.398 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.3395ms
+2024-05-16 14:32:24.443 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_vs/browserLink - null null
+2024-05-16 14:32:24.468 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.0022ms
+2024-05-16 14:32:24.572 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - null null
+2024-05-16 14:32:24.758 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 186.4781ms
+2024-05-16 14:32:24.763 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - null null
+2024-05-16 14:32:24.772 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.0331ms
+2024-05-16 14:32:25.054 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/highLightTitle.png - null null
+2024-05-16 14:32:25.059 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-05-16 14:32:25.072 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/highLightTitle.png - 404 0 null 17.4186ms
+2024-05-16 14:32:25.076 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/swagger/highLightTitle.png, Response status code: 404
+2024-05-16 14:32:26.896 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 14:32:26.913 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 16.4811ms
+2024-05-16 14:32:27.518 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_vs/browserLink - null null
+2024-05-16 14:32:27.525 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.8502ms
+2024-05-16 14:32:27.700 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - null null
+2024-05-16 14:32:27.711 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.7625ms
+2024-05-16 14:32:27.896 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 14:32:27.899 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 2.3533ms
+2024-05-16 14:32:27.923 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 14:32:27.925 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_vs/browserLink - null null
+2024-05-16 14:32:27.927 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 3.2832ms
+2024-05-16 14:32:27.934 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_vs/browserLink - 200 null text/javascript; charset=UTF-8 9.0456ms
+2024-05-16 14:32:27.935 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_vs/browserLink - null null
+2024-05-16 14:32:28.036 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.0367ms
+2024-05-16 14:32:28.193 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - null null
+2024-05-16 14:32:28.201 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.2243ms
+2024-05-16 14:32:28.331 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - null null
+2024-05-16 14:32:28.338 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.9047ms
+2024-05-16 14:32:28.961 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/highLightTitle.png - null null
+2024-05-16 14:32:28.965 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/highLightTitle.png - 404 0 null 3.6812ms
+2024-05-16 14:32:28.967 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/swagger/highLightTitle.png, Response status code: 404
+2024-05-16 14:32:29.512 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/highLightTitle.png - null null
+2024-05-16 14:32:29.518 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/highLightTitle.png - 404 0 null 6.16ms
+2024-05-16 14:32:29.521 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/swagger/highLightTitle.png, Response status code: 404
+2024-05-16 14:32:38.240 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api/Authors/get-all-author - null null
+2024-05-16 14:32:38.248 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 14:32:38.253 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-16 14:32:38.254 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api/Authors/get-all-author - 302 0 null 13.88ms
+2024-05-16 14:32:38.256 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FAuthors%2Fget-all-author - null null
+2024-05-16 14:32:38.258 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FAuthors%2Fget-all-author - 404 0 null 1.9738ms
+2024-05-16 14:32:38.260 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/Account/Login, Response status code: 404
+2024-05-16 14:32:54.906 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api/Authors/get-all-author - null null
+2024-05-16 14:32:54.912 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 14:32:54.913 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-16 14:32:54.915 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api/Authors/get-all-author - 302 0 null 8.1981ms
+2024-05-16 14:32:54.917 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FAuthors%2Fget-all-author - null null
+2024-05-16 14:32:54.919 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FAuthors%2Fget-all-author - 404 0 null 1.9294ms
+2024-05-16 14:32:54.922 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/Account/Login, Response status code: 404
+2024-05-16 14:32:56.431 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api/Authors/get-all-author - null null
+2024-05-16 14:32:56.439 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 14:32:56.442 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-16 14:32:56.443 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api/Authors/get-all-author - 302 0 null 12.5604ms
+2024-05-16 14:32:56.447 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FAuthors%2Fget-all-author - null null
+2024-05-16 14:32:56.449 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FAuthors%2Fget-all-author - 404 0 null 2.347ms
+2024-05-16 14:32:56.452 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/Account/Login, Response status code: 404

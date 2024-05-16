@@ -1,0 +1,9 @@
+2024-05-16 14:08:18.011 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/api/Books/get-all-books?filterOn=25&pageNumber=1&pageSize=100 - null null
+2024-05-16 14:08:18.023 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Read)
+2024-05-16 14:08:18.027 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-16 14:08:18.028 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/api/Books/get-all-books?filterOn=25&pageNumber=1&pageSize=100 - 302 0 null 17.9106ms
+2024-05-16 14:08:18.032 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/Account/Login?ReturnUrl=%2Fapi%2FBooks%2Fget-all-books%3FfilterOn%3D25%26pageNumber%3D1%26pageSize%3D100 - null null
+2024-05-16 14:08:18.035 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7179/Account/Login?ReturnUrl=%2Fapi%2FBooks%2Fget-all-books%3FfilterOn%3D25%26pageNumber%3D1%26pageSize%3D100 - 404 0 null 3.085ms
+2024-05-16 14:08:18.038 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/Account/Login, Response status code: 404

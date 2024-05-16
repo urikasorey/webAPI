@@ -45,6 +45,9 @@ namespace libaryAPI.Controllers
 			}
 			return BadRequest("Something wrong!");
 		}// end action Register
+		 //POST:/api/Auth/Login - chức năng đăng nhập user
+		
+
 	}// end class user controller
 }
 

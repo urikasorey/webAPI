@@ -1,0 +1,7 @@
+2024-05-16 14:09:56.992 +07:00 [INF] User profile is available. Using 'C:\Users\nhanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-16 14:09:57.182 +07:00 [INF] Now listening on: https://localhost:7179
+2024-05-16 14:09:57.184 +07:00 [INF] Now listening on: http://localhost:5062
+2024-05-16 14:09:57.186 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-16 14:09:57.187 +07:00 [INF] Hosting environment: Development
+2024-05-16 14:09:57.188 +07:00 [INF] Content root path: F:\GitClone\webAPI\libaryAPI\libaryAPI
+2024-05-16 14:09:59.922 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7179/swagger/index.html - null null

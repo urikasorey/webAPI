@@ -6,13 +6,14 @@
     "mssql1": {
       "serviceConnectorResourceId": "",
       "secretStore": "LocalSecretsFile",
+      "resourceId": null,
       "type": "mssql.onprem",
-      "connectionId": "ConnectionStrings:libary",
-      "dynamicId": null
+      "connectionId": "ConnectionStrings:libary"
     },
     "mssql2": {
       "serviceConnectorResourceId": "",
       "secretStore": "LocalSecretsFile",
+      "resourceId": null,
       "type": "mssql.onprem",
       "connectionId": "ConnectionStrings:BookAuthenConnect"
     }

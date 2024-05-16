@@ -1,0 +1,16 @@
+2024-05-16 14:28:04.138 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api/Publishers/get-all-publisher - null null
+2024-05-16 14:28:04.148 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 14:28:04.149 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-16 14:28:04.150 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api/Publishers/get-all-publisher - 302 0 null 12.4786ms
+2024-05-16 14:28:04.154 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FPublishers%2Fget-all-publisher - null null
+2024-05-16 14:28:04.157 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FPublishers%2Fget-all-publisher - 404 0 null 3.6531ms
+2024-05-16 14:28:04.160 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/Account/Login, Response status code: 404
+2024-05-16 14:28:05.145 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api/Publishers/get-all-publisher - null null
+2024-05-16 14:28:05.150 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 14:28:05.151 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-16 14:28:05.152 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api/Publishers/get-all-publisher - 302 0 null 6.513ms
+2024-05-16 14:28:05.156 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FPublishers%2Fget-all-publisher - null null
+2024-05-16 14:28:05.158 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FPublishers%2Fget-all-publisher - 404 0 null 2.4145ms
+2024-05-16 14:28:05.161 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/Account/Login, Response status code: 404

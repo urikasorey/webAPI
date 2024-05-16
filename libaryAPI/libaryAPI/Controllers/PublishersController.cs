@@ -2,6 +2,7 @@
 using libaryAPI.Models;
 using libaryAPI.Models.DTO;
 using libaryAPI.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,7 +11,7 @@ namespace libaryAPI.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	
+	[Authorize]
 	public class PublishersController : ControllerBase
 	{
 		private readonly dbcontext _dbContext;

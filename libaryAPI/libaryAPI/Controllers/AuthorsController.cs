@@ -4,11 +4,13 @@ using libaryAPI.Repository;
 using libaryAPI.Models;
 using libaryAPI.Data;
 using libaryAPI.Models.DTO;
+using Microsoft.AspNetCore.Authorization;
 
 namespace libaryAPI.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
+	[Authorize]
 	public class AuthorsController : ControllerBase
 	{
 		private readonly dbcontext _dbContext;

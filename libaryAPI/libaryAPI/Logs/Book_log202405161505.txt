@@ -1,0 +1,24 @@
+2024-05-16 15:05:14.172 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api/Authors/get-all-author - null null
+2024-05-16 15:05:14.187 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 15:05:14.189 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-16 15:05:14.189 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api/Authors/get-all-author - 302 0 null 17.4386ms
+2024-05-16 15:05:14.192 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FAuthors%2Fget-all-author - null null
+2024-05-16 15:05:14.194 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FAuthors%2Fget-all-author - 404 0 null 1.9987ms
+2024-05-16 15:05:14.197 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/Account/Login, Response status code: 404
+2024-05-16 15:05:18.676 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api/Authors/get-all-author - null null
+2024-05-16 15:05:18.679 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 15:05:18.681 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-16 15:05:18.682 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api/Authors/get-all-author - 302 0 null 6.7508ms
+2024-05-16 15:05:18.685 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FAuthors%2Fget-all-author - null null
+2024-05-16 15:05:18.688 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FAuthors%2Fget-all-author - 404 0 null 2.1974ms
+2024-05-16 15:05:18.690 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/Account/Login, Response status code: 404
+2024-05-16 15:05:19.933 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api/Authors/get-all-author - null null
+2024-05-16 15:05:19.935 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 15:05:19.937 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-16 15:05:19.938 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api/Authors/get-all-author - 302 0 null 5.4122ms
+2024-05-16 15:05:19.941 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FAuthors%2Fget-all-author - null null
+2024-05-16 15:05:19.943 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FAuthors%2Fget-all-author - 404 0 null 2.0413ms
+2024-05-16 15:05:19.946 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/Account/Login, Response status code: 404

@@ -7,15 +7,15 @@ namespace libaryAPI.Repository
 {
 	public class PublisherRepository : IPublisherRepository
 	{
-		private readonly dbcontext _dbcontext;
+		private readonly dbcontext _dbContext;
 		public PublisherRepository(dbcontext dbcontext)
 		{
-			_dbcontext = dbcontext;
+			_dbContext = dbcontext;
 		}
 		public List<PublisherDTO> GetAllPublishers()
 		{
 			//Get Data From Database -Domain Model 
-			var allPublishersDomain = _dbcontext.Publishers.ToList();
+			var allPublishersDomain = _dbContext.Publishers.ToList();
 
 			//Map domain models to DTOs 
 			var allPublisherDTO = new List<PublisherDTO>();
@@ -34,8 +34,7 @@ namespace libaryAPI.Repository
 		public PublisherNoIdDTO GetPublisherById(int id)
 		{
 			// get book Domain model from Db 
-			var publisherWithIdDomain = _dbcontext.Publishers.FirstOrDefault(x => x.ID ==
-id);
+			var publisherWithIdDomain = _dbContext.Publishers.FirstOrDefault(x => x.ID ==id);
 			if (publisherWithIdDomain != null)
 			{ //Map Domain Model to DTOs 
 				var publisherNoIdDTO = new PublisherNoIdDTO
@@ -49,37 +48,36 @@ id);
 			return null;
 
 		}
-		public AddPublisherRequestDTO AddPublisher(AddPublisherRequestDTO
-addPublisherRequestDTO)
+		public AddPublisherRequestDTO AddPublisher(AddPublisherRequestDTO addPublisherRequestDTO)
 		{
 			var publisherDomainModel = new Publishers
 			{
 				Name = addPublisherRequestDTO.Name,
 			};
 			//Use Domain Model to create Book 
-			_dbcontext.Publishers.Add(publisherDomainModel);
-			_dbcontext.SaveChanges();
+			_dbContext.Publishers.Add(publisherDomainModel);
+			_dbContext.SaveChanges();
 			return addPublisherRequestDTO;
 		}
 
 		public PublisherNoIdDTO UpdatePublisherById(int id, PublisherNoIdDTO publisherNoIdDTO)
 		{
-			var publisherDomain = _dbcontext.Publishers.FirstOrDefault(n => n.ID == id);
+			var publisherDomain = _dbContext.Publishers.FirstOrDefault(n => n.ID == id);
 			if (publisherDomain != null)
 			{
 				publisherDomain.Name = publisherNoIdDTO.Name;
 
-				_dbcontext.SaveChanges();
+				_dbContext.SaveChanges();
 			}
 			return null;
 		}
 		public Publishers? DeletePublisherById(int id)
 		{
-			var publisherDomain = _dbcontext.Publishers.FirstOrDefault(n => n.ID == id);
+			var publisherDomain =	_dbContext.Publishers.FirstOrDefault(n => n.ID == id);
 			if (publisherDomain != null)
 			{
-				_dbcontext.Publishers.Remove(publisherDomain);
-				_dbcontext.SaveChanges();
+				_dbContext.Publishers.Remove(publisherDomain);
+				_dbContext.SaveChanges();
 			}
 			return null;
 		}

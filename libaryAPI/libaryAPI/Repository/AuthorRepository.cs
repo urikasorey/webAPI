@@ -7,15 +7,15 @@ namespace libaryAPI.Repository
 {
 	public class AuthorRepository : IAuthorRepository
 	{
-		private readonly dbcontext _dbcontext;
+		private readonly dbcontext _dbContext;
 		public AuthorRepository(dbcontext dbcontext)
 		{
-			_dbcontext = dbcontext;
+			_dbContext = dbcontext;
 		}
 		public List<AuthorDTO> GellAllAuthors()
 		{
 			//Get Data From Database -Domain Model 
-			var allAuthorsDomain = _dbcontext.Authors.ToList();
+			var allAuthorsDomain = _dbContext.Authors.ToList();
 			//Map domain models to DTOs 
 			var allAuthorDTO = new List<AuthorDTO>();
 			foreach (var authorDomain in allAuthorsDomain)
@@ -32,7 +32,7 @@ namespace libaryAPI.Repository
 		public AuthorNoIdDTO GetAuthorById(int id)
 		{
 			// get book Domain model from Db 
-			var authorWithIdDomain = _dbcontext.Authors.FirstOrDefault(x => x.AuthorID ==
+			var authorWithIdDomain = _dbContext.Authors.FirstOrDefault(x => x.AuthorID ==
 id);
 			if (authorWithIdDomain == null)
 			{
@@ -52,28 +52,28 @@ id);
 				FullName = addAuthorRequestDTO.FullName,
 			};
 			//Use Domain Model to create Author 
-			_dbcontext.Authors.Add(authorDomainModel);
-			_dbcontext.SaveChanges();
+			_dbContext.Authors.Add(authorDomainModel);
+			_dbContext.SaveChanges();
 			return addAuthorRequestDTO;
 		}
 		public AuthorNoIdDTO UpdateAuthorById(int id, AuthorNoIdDTO authorNoIdDTO)
 		{
-			var authorDomain = _dbcontext.Authors.FirstOrDefault(n => n.AuthorID == id);
+			var authorDomain = _dbContext.Authors.FirstOrDefault(n => n.AuthorID == id);
 			if (authorDomain != null)
 			{
 				authorDomain.FullName = authorNoIdDTO.FullName;
-				_dbcontext.SaveChanges();
+				_dbContext.SaveChanges();
 			}
 			return authorNoIdDTO;
 		}
 
 		public Authors? DeleteAuthorById(int id)
 		{
-			var authorDomain = _dbcontext.Authors.FirstOrDefault(n => n.AuthorID == id);
+			var authorDomain = _dbContext.Authors.FirstOrDefault(n => n.AuthorID == id);
 			if (authorDomain != null)
 			{
-				_dbcontext.Authors.Remove(authorDomain);
-				_dbcontext.SaveChanges();
+					_dbContext.Authors.Remove(authorDomain);
+				_dbContext.SaveChanges();
 			}
 			return null;
 		}

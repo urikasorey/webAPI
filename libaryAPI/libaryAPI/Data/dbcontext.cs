@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using libaryAPI.Models;
-
+using libaryAPI.Repository;
 namespace libaryAPI.Data
 {
 	public class dbcontext:DbContext
@@ -21,10 +21,7 @@ namespace libaryAPI.Data
 		public DbSet<Authors> Authors { get; set; }
 		public DbSet<Book_Author>Book_Author { get; set; }
 		public DbSet<Publishers>Publishers { get; set; }
-		 DbSet<Image>Images { get; set; }
-		internal async Task GetBooksAsync(int iD)
-		{
-			throw new NotImplementedException();
-		}
+		 public DbSet<Image>Images { get; set; }
+		
 	}	
 }

@@ -1,0 +1,8 @@
+2024-05-16 15:12:13.241 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5062/api/Books/AddBook - application/json 264
+2024-05-16 15:12:13.259 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-16 15:12:13.260 +07:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-16 15:12:13.261 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5062/api/Books/AddBook - 302 0 null 20.4224ms
+2024-05-16 15:12:13.263 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FBooks%2FAddBook - null null
+2024-05-16 15:12:13.265 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5062/Account/Login?ReturnUrl=%2Fapi%2FBooks%2FAddBook - 404 0 null 2.0306ms
+2024-05-16 15:12:13.269 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/Account/Login, Response status code: 404
